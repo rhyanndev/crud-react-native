@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { View, Text, FlatList, Alert } from 'react-native'
+import { View, Text, FlatList, Alert } from "react-native";
 import { Button, ListItem, Avatar } from "@rneui/base";
-//import Icon from "react-native-vector-icons/MaterialCommunityIcons"
-import { Image } from "@rneui/base";
+import Icon from "react-native-vector-icons/MaterialIcons";
 import UsersContext from "../context/UsersContext";
 
 export default props => {
@@ -30,18 +29,26 @@ export default props => {
         return (
             <View style={{ flexDirection: 'row' }}>
                 <Button
-                    onPress={() => props.navigation.navigate('userForm', user)}
+                    onPress={() => props.navigation.navigate('UserForm', user)}
                     type="clear"
-                    icon={<Image source={require('../images/edit-image.png')}
-                        style={{ width: 25, height: 25 }}
-                    />}
+                    icon={
+                        <Icon 
+                            name="edit" 
+                            size={25} 
+                            color="blue" 
+                        />
+                    }
                 />
                 <Button
                     onPress={() => confirmUserDeletion(user)}
                     type="clear"
-                    icon={<Image source={require('../images/delete-image.png')}
-                        style={{ width: 25, height: 25 }}
-                    />}
+                    icon={
+                        <Icon 
+                            name="delete" 
+                            size={25} 
+                            color="red" 
+                        />
+                    }
                 />
             </View>
         );

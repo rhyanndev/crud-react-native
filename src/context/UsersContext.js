@@ -3,8 +3,8 @@ import users from "../data/users";
 
 //Compartilhar os usuários
 
-const initialState = { users }
-const UsersContext = createContext({})
+const initialState = { users };
+const UsersContext = createContext({});
 
 const actions = {
     createUser(state, action) {
@@ -16,7 +16,7 @@ const actions = {
 
         }
     },
-    updateUser(state, action) {
+    updatedUser(state, action) {
         const update = action.payload
         return {
             ...state,

@@ -4,8 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import UserList from "./views/UserList";
 import UserForm from "./views/UserForm";
 import { Button } from "@rneui/themed";
-//import Icons from 'react-native-vector-icons/EvilIcons'
-import { Image } from "@rneui/base";
+import Icon from "react-native-vector-icons/MaterialIcons";
 import { UsersProvider } from "./context/UsersContext";
 
 
@@ -28,9 +27,13 @@ export default props => {
                                     <Button
                                         onPress={() => navigation.navigate('UserForm')}
                                         type="clear"
-                                        icon={<Image source={require('./images/plus-image.png')}
-                                            style={{ width: 25, height: 25 }}
-                                        />}
+                                        icon={
+                                            <Icon 
+                                                name="add" 
+                                                size={35} 
+                                                color="white" 
+                                            />
+                                        }
                                     />
                                 )
                             }
