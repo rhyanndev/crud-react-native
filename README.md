@@ -1,3 +1,20 @@
+<h1 align="center"> Crud em React Native </h1>
+
+<p align="center">
+O reposiório consta com o projeto prático realizado com React Native.
+</p>
+
+![Tela 1](https://github.com/user-attachments/assets/d6b434cf-4746-4841-b2c0-0b35190708dd)
+![Tela 2](https://github.com/user-attachments/assets/988abb11-2eeb-495c-a5b5-3cb4ec64c65a)
+
+
+
+
+
+
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
